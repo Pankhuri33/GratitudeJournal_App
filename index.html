@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="icon" type="image/png" href="assets/journaling.png">
+
+  <title>Gratitude Journal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1 class="title">🌸 My Gratitude Journal</h1>
+
+    
+    <div class="journal-entry">
+  <p id="prompt" class="prompt-text">💡 Prompt: Loading...</p>
+
+  <textarea id="gratitude-input" placeholder="Today, I’m grateful for..."></textarea>
+
+  <div class="mood-section">
+    <label>Select your mood:</label>
+    <select id="mood-select">
+      <option value="😊">😊 Happy</option>
+      <option value="😌">😌 Calm</option>
+      <option value="😢">😢 Sad</option>
+      <option value="😤">😤 Frustrated</option>
+      <option value="💪">💪 Strong</option>
+    </select>
+  </div>
+
+  <button id="save-btn">Save Note</button>
+</div>
+
+
+    <div class="entries-container">
+      <h2>📖 My Notes</h2>
+      <div id="entries-list">
+        <!-- Saved notes will appear here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

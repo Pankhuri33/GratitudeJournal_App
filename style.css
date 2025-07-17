@@ -1,0 +1,176 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e4c1f9, #c1f9f4); /* soft purple to mint */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+/* Wrapper */
+.wrapper {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Title */
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #a65ac7;
+}
+
+/* Journal Entry Input */
+.journal-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.prompt-text {
+  font-style: italic;
+  color: #836FFF;
+  background: #f3efff;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.mood-section {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.mood-section select {
+  margin-top: 5px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+
+#gratitude-input {
+  padding: 15px;
+  border: 2px dashed #d2a9e3;
+  border-radius: 12px;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #faf4fb;
+  color: #333;
+}
+
+#save-btn {
+  padding: 12px;
+  background-color: #d2a9e3;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#save-btn:hover {
+  background-color: #ba7ddc;
+}
+
+/* Entries Container */
+.entries-container h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #a65ac7;
+}
+
+#entries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Note Card */
+.note-card {
+  background-color: #f8efff;
+  border-left: 6px solid #d2a9e3;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.note-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+.note-card {
+  position: relative;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #e63946;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  #gratitude-input {
+    font-size: 0.95rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
